@@ -1,24 +1,100 @@
+*{
+
+box-sizing:border-box;
+
+}
+
+
 body{
 
-background:#111;
+margin:0;
+
+font-family:Arial, sans-serif;
+
+background:
+linear-gradient(135deg,#111,#222);
+
 color:white;
 
-font-family:Arial;
+min-height:100vh;
+
+}
+
+
+header{
 
 text-align:center;
+
+padding:50px 20px;
 
 }
 
 
 h1{
 
-margin:40px;
+font-size:45px;
+
+}
+
+
+p{
+
+color:#aaa;
+
+font-size:18px;
 
 }
 
 
 
-.gallery{
+.upload-box{
+
+text-align:center;
+
+margin:20px;
+
+}
+
+
+
+.upload-btn{
+
+
+background:white;
+
+color:black;
+
+padding:15px 35px;
+
+border-radius:50px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+
+}
+
+
+
+.upload-btn:hover{
+
+transform:scale(1.1);
+
+}
+
+
+.upload-btn input{
+
+display:none;
+
+}
+
+
+
+#gallery{
 
 
 display:grid;
@@ -28,16 +104,35 @@ grid-template-columns:
 repeat(auto-fit,minmax(250px,1fr));
 
 
-gap:20px;
+gap:25px;
 
-padding:30px;
+padding:40px;
 
 
 }
 
 
 
-.gallery img{
+.card{
+
+
+background:#1c1c1c;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 10px 30px #000;
+
+
+animation:show .5s;
+
+
+}
+
+
+
+.card img{
 
 
 width:100%;
@@ -46,22 +141,37 @@ height:300px;
 
 object-fit:cover;
 
-border-radius:15px;
 
-cursor:pointer;
+}
 
 
-transition:0.3s;
+
+.info{
+
+
+padding:15px;
+
+color:#bbb;
 
 
 }
 
 
 
-.gallery img:hover{
+@keyframes show{
 
+from{
 
-transform:scale(1.05);
+opacity:0;
 
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+}
 
 }
