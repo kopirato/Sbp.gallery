@@ -3,7 +3,7 @@
 
 <head>
 
-<title>My Gallery</title>
+<title>Selian Gallery</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -13,20 +13,34 @@
 <body>
 
 
-<h1>My Photo Gallery</h1>
+<header>
+
+<h1>✨ My Creative Gallery</h1>
+
+<p>Upload & showcase your moments</p>
+
+</header>
 
 
-<div class="gallery">
+
+<div class="upload-box">
 
 
-<img src="images/photo1.jpg" alt="photo">
+<label class="upload-btn">
 
-<img src="images/photo2.jpg" alt="photo">
+📷 Add Photos
 
-<img src="images/photo3.jpg" alt="photo">
+<input type="file" id="upload" multiple accept="image/*">
+
+</label>
 
 
 </div>
+
+
+
+<div id="gallery"></div>
+
 
 
 <script src="script.js"></script>
