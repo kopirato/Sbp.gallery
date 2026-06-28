@@ -34,20 +34,23 @@ from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 const firebaseConfig = {
 
 
-apiKey:"YOUR_API_KEY",
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-authDomain:"YOUR_AUTH_DOMAIN",
-
-projectId:"YOUR_PROJECT_ID",
-
-storageBucket:"YOUR_STORAGE_BUCKET",
-
-messagingSenderId:"YOUR_SENDER_ID",
-
-appId:"YOUR_APP_ID"
-
-
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDaPxY7rnI_Gxw3p8BBnJFK7eX4r8jWjqY",
+  authDomain: "gallery-6da0e.firebaseapp.com",
+  projectId: "gallery-6da0e",
+  storageBucket: "gallery-6da0e.firebasestorage.app",
+  messagingSenderId: "785119785688",
+  appId: "1:785119785688:web:6ac019610d19f741269dad"
 };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 
 
